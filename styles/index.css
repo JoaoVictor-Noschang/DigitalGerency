@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+:root {
+    --preto: #2A2A2A;
+    --branco: #F8F8F8;
+    --cinza-01: #E7E7E7;
+    --cinza-02: #D9D9D9;
+    --rosa: #B378FF;
+    --roxo: #7500CF;
+
+    --radius: 10px;
+    --shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    background: var(--preto);
+    height: 50px;
+    padding: 0 40px;
+    display: flex;
+}
+
+header img {
+    width: 25px;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > img {
+    width: 100px;
+    margin: 20px auto 20px auto;
+}
+
+section {
+    background: var(--preto);
+    width: 440px;
+    padding: 15px;
+    margin: 10px auto 20px auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+form {
+    background: var(--cinza-01);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: var(--radius);
+}
+
+form p {
+    margin-bottom: 5px;
+}
+
+form input {
+    background: var(--cinza-02);
+    width: 170px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: var(--radius);
+    line-height: 1.625rem;
+    font-size: 1.125rem;
+    box-shadow: var(--shadow);
+    font-weight: bolder;
+    transition: focus 0.2s;
+    text-align: center;
+}
+
+form input:focus {
+    border: 1px solid var(--roxo);
+    outline: 0;
+} 
+
+form div {
+    background: var(--branco);
+    width: 170px;
+    margin: 10px auto 15px auto;
+    padding: 10px;
+    border-radius: var(--radius);
+    border: 2px solid var(--roxo);
+    font-style: italic;
+    font-size: 0.75rem;
+}
+
+form div span {
+    font-weight: bold;
+}
+
+form button {
+    position: absolute;
+    bottom: -35px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: var(--radius);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: var(--roxo);
+    color: var(--branco);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: color 0.1s, background 0.3s;
+}
+
+form button:hover {
+    background: var(--rosa);
+    border: 3px solid var(--roxo);
+    color: var(--roxo);
+    bottom: -37px;
+}
+
+
+
+footer {
+    width: 100%;
+    background: var(--preto);
+    padding: 12px 40px;
+    position: absolute;
+    bottom: 0px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+#date {
+    color: var(--branco);
+}
+
+#version {
+    color: var(--rosa);
+}
