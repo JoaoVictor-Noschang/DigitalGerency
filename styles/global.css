@@ -12,3 +12,51 @@
     box-sizing: border-box;
     font-family: var(--font-principal);
 }
+
+
+/* -- HEADER ---------------------------------------*/
+
+header {
+    width: 100%;
+    background: var(--preto);
+    height: 50px;
+    padding: 0 40px;
+    display: flex;
+}
+
+header img {
+    width: 25px;
+}
+
+
+/* -- FOOTER ---------------------------------------*/
+
+footer {
+    width: 100%;
+    background: var(--preto);
+    padding: 12px 40px;
+    position: absolute;
+    bottom: 0px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+#footerDate, #footerUser {
+    color: var(--branco);
+    width: 100px;
+}
+
+#footerUser {
+    text-align: center;
+}
+
+#version {
+    color: var(--rosa);
+    width: 100px;
+    text-align: right;
+}

@@ -17,19 +17,7 @@ body {
     position: relative;
 }
 
-header {
-    width: 100%;
-    background: var(--preto);
-    height: 50px;
-    padding: 0 40px;
-    display: flex;
-}
-
-header img {
-    width: 25px;
-}
-
-
+/*----------------------------------------------------*/
 
 main {
     display: flex;
@@ -119,29 +107,4 @@ form button:hover {
     border: 3px solid var(--roxo);
     color: var(--roxo);
     bottom: -37px;
-}
-
-
-
-footer {
-    width: 100%;
-    background: var(--preto);
-    padding: 12px 40px;
-    position: absolute;
-    bottom: 0px;
-}
-
-footer div {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.7rem;
-    font-weight: bold;
-}
-
-#date {
-    color: var(--branco);
-}
-
-#version {
-    color: var(--rosa);
 }

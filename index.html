@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Gerency - Login</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/index.css">
 </head>
@@ -24,10 +25,10 @@
                     <input type="text" id="senha">
                 </label>
                 <div>
-                    <p>Usuário: <span>Exemplo de usuário</span></p>
-                    <p>Cargo: <span>Exemplo de cargo</span></p>
+                    <p>Usuário: <span id="userName">...</span></p>
+                    <p>Cargo: <span id="userCarg">...</span></p>
                 </div>
-                <button id="btn-entrar">
+                <button id="btn-enter">
                     ENTRAR
                 </button>
             </form>
@@ -35,13 +36,12 @@
     </main>
     <footer>
         <div>
-            <p id="date">Data: dd/mm/aa</p>
+            <p id="footerDate"></p>
             <p id="version">Version: 1.0.0.0</p>
         </div>
     </footer>
 
-    <script src="scripts/date.js">
-
-    </script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/login.js"></script>
 </body>
 </html>

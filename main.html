@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <img src="assets/vec/digital_icon_white.svg" alt="Digital-Icon">
+    </header>
+    <main>
+        <img src="assets/vec/DG_logo.svg" alt="Digital Gerency">
+        <section>
+            <button id="cadastro">Cadastro de lote</button>
+            <button id="relatorio">Relatório de Lotes</button>
+            <button id="calendario">Calendário</button>
+        </section>
+        <button id="btn-exit">Sair</button>
+    </main>
+    <footer>
+        <div>
+            <p id="footerDate"></p>
+            <p id="footerUser"></span></p>
+            <p id="version">Version: 1.0.0.0</p>
+        </div>
+    </footer>
+
+    <script src="scripts/date.js"></script>
+    <script src="scripts/userInFooter.js"></script>
+    <script>
+
+        const btnExit = document.querySelector("#btn-exit");
+
+        btnExit.addEventListener("click", (event) => {
+            localStorage.clear();
+            window.location.assign('./index.html');
+        });
+    </script>
+</body>
+</html>
