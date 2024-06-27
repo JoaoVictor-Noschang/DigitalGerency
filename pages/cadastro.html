@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Lote</title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/vec/digital_icon_white.svg" alt="Digital-Icon">
+    </header>
+
+    <img id="background-digital" src="../assets/vec/background_digital.svg" alt="Digital">
+    
+    <main>
+        <section>
+            <div class="double">
+                <label for="codigo">
+                    <p>Código</p>
+                    <input id="codigo" type="number" readonly>
+                </label>
+                <label for="lote">
+                    <p>Lote</p>
+                    <input id="lote" type="text">
+                </label>
+            </div>
+            <div class="double">
+                <label for="produto">
+                    <p>Produto</p>
+                    <input id="produto" type="text">
+                </label>
+                <label for="fornecedor">
+                    <p>Fornecedor</p>
+                    <input id="fornecedor" type="text">
+                </label>
+            </div>
+            <div class="single">
+                <label for="cod-bar">
+                    <p>Código de Barras</p>
+                    <input id="cod-bar" type="number">
+                </label>
+            </div>
+            <div class="double">
+                <label for="quantidade">
+                    <p>Quantidade</p>
+                    <input id="quantidade" type="number">
+                </label>
+                <label for="vencimento">
+                    <p>Vencimento</p>
+                    <input id="vencimento" type="date">
+                </label>
+            </div>
+            <button id="btn-cadastrar">CADASTRAR</button>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p id="footerDate">Data: dd/mm/aa</p>
+            <p id="footerUser">000 - <span>User 00</span></p>
+            <p id="version">Version: 1.0.0.0</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/footer.js"></script>
+</body>
+</html>

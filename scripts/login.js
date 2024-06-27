@@ -70,7 +70,7 @@ function verificarLogin() {
 
         if (user) {
             //window.location.replace('./main.html');
-            window.location.assign('./main.html');
+            window.location.assign('./pages/main.html');
 
         } else {
             alert("Login ou senhas INCORREROS!");

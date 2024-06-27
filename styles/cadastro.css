@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+:root {
+    --preto: #2A2A2A;
+    --branco: #F8F8F8;
+    --cinza-01: #E7E7E7;
+    --cinza-02: #D9D9D9;
+    --rosa: #B378FF;
+    --roxo: #7500CF;
+
+    --radius: 10px;
+    --shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    height: 100vh;
+    position: relative;
+}
+
+/*----------------------------------------*/
+
+main {
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background-digital {
+    width: 540px;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section {
+    background: var(--cinza-02);
+    width: 600px;
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+section div {
+    margin-bottom: 20px;
+}
+
+.double {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.double input {
+    width: 240px;
+}
+
+
+.single input {
+    width: 100%;
+}
+
+div p {
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+
+div input {
+    height: 30px;
+    border: none;
+    background: var(--branco);
+    border-radius: var(--radius);
+    padding: 5px 10px;
+    box-shadow: var(--shadow);
+}
+
+#codigo {
+    background: var(--rosa);
+    border: 1px solid rgba(106, 1, 127, 0.8);
+}
+
+#codigo:focus {
+    border: none;
+    box-shadow: var(--shadow);
+}
+
+div input:focus {
+    border: 1px solid var(--roxo);
+    outline: none; 
+    box-shadow: 0px 0px 10px -3px var(--rosa);
+}
+
+#btn-cadastrar {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: var(--radius);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: var(--roxo);
+    color: var(--branco);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: color 0.1s, background 0.3s;
+}
+
+#btn-cadastrar:hover {
+    bottom: -23px;
+    background: var(--rosa);
+    border: 3px solid var(--roxo);
+    color: var(--roxo);
+}
