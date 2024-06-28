@@ -4,6 +4,16 @@
 
 :root {
     --font-principal: 'PT Sans', sans-serif;
+
+    --preto: #2A2A2A;
+    --branco: #F8F8F8;
+    --cinza-01: #E7E7E7;
+    --cinza-02: #D9D9D9;
+    --rosa: #B378FF;
+    --roxo: #7500CF;
+
+    --radius: 10px;
+    --shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -22,10 +32,20 @@ header {
     height: 50px;
     padding: 0 40px;
     display: flex;
+    align-items: center;
 }
 
 header img {
     width: 25px;
+}
+
+header p {
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 1.25rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 

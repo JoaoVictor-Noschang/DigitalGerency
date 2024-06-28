@@ -64,12 +64,12 @@ section div {
     width: 100%;
 }
 
-div p {
+#form-cad p {
     margin-bottom: 5px;
     margin-left: 2px;
 }
 
-div input {
+#form-cad div input {
     height: 30px;
     border: none;
     background: var(--branco);
