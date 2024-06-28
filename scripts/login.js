@@ -33,7 +33,7 @@ loginInput.addEventListener("change", () => {
 });
 
 function showUser() {
-    const loginCurrenc =  loginInput.value;
+    const loginCurrenc = loginInput.value;
 
     if (loginInput.value != '') {
         for (let i = 0; i < users.length; i++) {
@@ -57,7 +57,7 @@ buttonEnter.addEventListener("click", (event) => {
     
 });
 
-// Aqui está dando erro, está funcionando apenas o primeiro objeto na lista.
+
 function verificarLogin() {
     const loginValue = loginInput.value;
     const senhaValue = senhaInput.value;
