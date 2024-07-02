@@ -90,6 +90,6 @@ section button:hover,
 #btn-exit:hover {
     background: var(--rosa);
     color: var(--roxo);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 0px 2px var(--roxo);
     cursor: pointer;
 }

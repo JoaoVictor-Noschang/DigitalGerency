@@ -112,8 +112,8 @@ div input:focus {
 }
 
 #btn-cadastrar:hover {
-    bottom: -23px;
     background: var(--rosa);
-    border: 3px solid var(--roxo);
+    border: 1px solid var(--roxo);
+    box-shadow: 0px 0px 0px 3px var(--roxo);
     color: var(--roxo);
 }
