@@ -53,8 +53,16 @@ class Lote {
         } else {
             alert("Todos os campos devem ser preenchidos!");
         }
+    }
 
-
+    static excluirCadasstro(idExclusao) {
+        for(let i in cadastros) {
+            if (idExclusao == cadastros[i].id) {
+                cadastros.splice(i, 1);
+                alert("Registro deletado!");
+                Lote.clear();
+            }
+        }
     }
 
 }
@@ -62,6 +70,7 @@ class Lote {
 actionButton.addEventListener("click", () => {
     Lote.cadastrarNovoLote();
 });
+
 
 /*
 let lot01 = new Lote("11-11-111-1111", "café", "tão bom", "789456123456123", 200, "2024-12-31");
